@@ -20,12 +20,12 @@
         android:layout_height="wrap_content"
         android:text="Nombre"
         android:id="@+id/txtNombre"
-        android:layout_below="@+id/lblBienvenido"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="25dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/lblBienvenido"/>
+    <!--    android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" -->
 
-        />
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,11 +40,11 @@
         android:layout_height="wrap_content"
         android:text="Tipo"
         android:id="@+id/txtTipo"
-        android:layout_below="@+id/Nombre"
-        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Nombre"/>
+    <!--    android:layout_alignParentLeft="true"
         android:layout_marginTop="25dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        />
+        android:textAppearance="?android:attr/textAppearanceMedium"-->
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,10 +59,10 @@
         android:layout_height="wrap_content"
         android:text="Valor"
         android:id="@+id/txtValor"
-        android:layout_below="@+id/Tipo"
-        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Tipo"/>
+    <!--    android:layout_alignParentLeft="true"
         android:layout_marginTop="25dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"/>
+        android:textAppearance="?android:attr/textAppearanceMedium"-->
 
     <EditText
         android:layout_width="wrap_content"
@@ -78,11 +78,11 @@
         android:layout_height="wrap_content"
         android:text="Stock"
         android:id="@+id/txtStock"
-        android:layout_below="@+id/Valor"
-        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Valor" />
+    <!--    android:layout_alignParentLeft="true"
         android:layout_marginTop="25dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        />
+        android:textAppearance="?android:attr/textAppearanceMedium"-->
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -124,25 +124,21 @@
         android:layout_height="wrap_content"
         android:id="@+id/Listar"
         android:text="Listar"
-        android:layout_alignBottom="@+id/Insertar"
-        android:layout_toEndOf="@+id/Insertar"
-        android:layout_alignTop="@+id/Insertar" />
+        android:layout_below="@+id/Insertar"
+        android:layout_alignParentStart="true" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Modificar"
         android:text="Modificar"
-        android:layout_alignBottom="@+id/Listar"
-        android:layout_toEndOf="@+id/Listar"
-        android:layout_alignTop="@+id/Listar" />
+        android:layout_above="@+id/Listar"
+        android:layout_alignParentEnd="true" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Eliminar"
         android:text="Eliminar"
-        android:layout_alignBottom="@+id/Modificar"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/Modificar"
-        android:layout_toEndOf="@+id/Modificar" />
+        android:layout_below="@+id/Modificar"
+        android:layout_alignEnd="@+id/Modificar" />
 
 </RelativeLayout>
