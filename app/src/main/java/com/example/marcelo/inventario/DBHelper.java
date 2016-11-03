@@ -20,7 +20,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("create table usuarios(codigo integer primary key,usuario text,contrasena text)");
-        db.execSQL("insert into usuarios values(01,'admin','admin')");
+        db.execSQL("create table usuarios(id integer primary key autoincrement,nombre text,usuario text,contrasena text)");
+        db.execSQL("insert into usuarios values('admin','admin','admin')");
     }
 }
