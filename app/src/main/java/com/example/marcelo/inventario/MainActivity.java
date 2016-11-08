@@ -37,9 +37,10 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     public void registro(View v){
-
+        Intent ven=new Intent(this,Registro.class);
+        startActivity(ven);
     }
     public void salir(View v){
-        finish();;
+        finish();
     }
 }
