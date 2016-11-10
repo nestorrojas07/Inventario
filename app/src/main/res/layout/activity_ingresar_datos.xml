@@ -145,5 +145,12 @@
         android:layout_below="@+id/Modificar"
         android:layout_alignEnd="@+id/Modificar"
         android:layout_gravity="right" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:id="@+id/btnVolver"
+        android:layout_below="@+id/Insertar"
+        android:layout_toEndOf="@+id/Insertar" />
 
 </RelativeLayout>
