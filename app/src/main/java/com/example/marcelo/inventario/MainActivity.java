@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         SQLiteDatabase db = admin.getWritableDatabase();
         String usuario = et1.getText().toString();
         String contrasena = et2.getText().toString();
-        fila = db.rawQuery("select nombre,usuario,contrasena from usuarios where usuario='" + usuario + "' and contrasena='" + contrasena + "'", null);
+        fila = db.rawQuery("select usuario,contrasena from usuarios where usuario='" + usuario + "' and contrasena='" + contrasena + "'", null);
 
         if (fila.moveToFirst()) {
             String usua = fila.getString(0);
@@ -49,6 +49,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void salir(View v){
-        finish();;
+        finish();
     }
 }
