@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="BIENVENIDO"
+        android:id="@+id/lblBienvenido"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:id="@+id/txtNombre"
+        android:layout_below="@+id/lblBienvenido"/>
+    <!--    android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" -->
+
+
+    <EditText
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Nombre"
+        android:layout_below="@+id/txtNombre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/lblBienvenido"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo"
+        android:id="@+id/txtTipo"
+        android:layout_below="@+id/Nombre"/>
+    <!--    android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"-->
+
+    <EditText
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Tipo"
+        android:layout_below="@+id/txtTipo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/lblBienvenido"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor"
+        android:id="@+id/txtValor"
+        android:layout_below="@+id/Tipo"/>
+    <!--    android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"-->
+
+    <EditText
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Valor"
+        android:layout_below="@+id/txtValor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/lblBienvenido"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock"
+        android:id="@+id/txtStock"
+        android:layout_below="@+id/Valor" />
+    <!--    android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"-->
+
+    <EditText
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Stock"
+        android:layout_below="@+id/txtStock"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/lblBienvenido"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Stock"
+        android:id="@+id/Group">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tienda"
+            android:id="@+id/Tienda"
+            android:layout_below="@+id/Stock"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Almacen"
+            android:id="@+id/Almacen"
+            android:layout_below="@+id/Tienda"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Listar"
+        android:text="Listar"
+        android:layout_below="@+id/Insertar"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Insertar"
+        android:text="Insertar"
+        android:layout_below="@+id/Group"
+        android:layout_alignEnd="@+id/Group"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Modificar"
+        android:text="Modificar"
+        android:layout_above="@+id/Listar"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Eliminar"
+        android:text="Eliminar"
+        android:layout_below="@+id/Modificar"
+        android:layout_alignEnd="@+id/Modificar"
+        android:layout_gravity="right" />
+
+</RelativeLayout>
