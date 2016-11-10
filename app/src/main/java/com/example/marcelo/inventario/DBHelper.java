@@ -13,11 +13,13 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table usuarios(nombre text,usuario text,contrasena text)");
         db.execSQL("insert into usuarios values('admin','admin','admin')");
+        db.execSQL("insert into usuarios values('user','user','123')");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("create table usuarios(nombre text,usuario text,contrasena text)");
         db.execSQL("insert into usuarios values('admin','admin','admin')");
+        db.execSQL("insert into usuarios values('user','user','123')");
     }
 }
