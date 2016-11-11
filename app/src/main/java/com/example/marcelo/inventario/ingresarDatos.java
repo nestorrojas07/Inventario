@@ -22,8 +22,15 @@ public class ingresarDatos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ingresar_datos);
 
-        miNombre = (EditText)findViewById(R.id.txtNombre);
+        miNombre = (EditText)findViewById(R.id.Nombre);
+
+
+
+
+
     }
+
+
 
 //    public void onClick(View v) {
 //        Intent intent = new Intent(this, Main2Activity.class);
