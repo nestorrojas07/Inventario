@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,14 +24,7 @@ public class ingresarDatos extends AppCompatActivity {
         setContentView(R.layout.activity_ingresar_datos);
 
         miNombre = (EditText)findViewById(R.id.Nombre);
-
-
-
-
-
     }
-
-
 
 //    public void onClick(View v) {
 //        Intent intent = new Intent(this, Main2Activity.class);
