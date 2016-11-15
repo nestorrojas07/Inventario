@@ -22,6 +22,10 @@ import android.widget.Toast;
 import static com.example.marcelo.inventario.ToDoDbHelper.*;
 public class ingresarDatos extends AppCompatActivity {
 
+    private GridView gridViewTareas;
+    private CursorAdapter adapter;
+    private String[] projection = {TAREA_NOMBRE, TAREA_TIPO, TAREA_VALOR, TAREA_STOCK, TAREA_FECHA_CREACION};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,5 +1,8 @@
 package com.example.marcelo.inventario;
 
+/**
+ * Created by marchelo on 13-11-2016.
+ */
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
