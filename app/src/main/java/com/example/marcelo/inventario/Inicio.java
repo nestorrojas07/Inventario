@@ -98,7 +98,7 @@ public class Inicio extends AppCompatActivity {
                 return true;
             case 3:
                 Toast.makeText(this, "Has elegido Listar datos", Toast.LENGTH_LONG).show();
-                Intent intent4 = new Intent(this, ingresarDatos.class);
+                Intent intent4 = new Intent(this, ListarDatos.class);
                 startActivity(intent4);
                 return true;
         }

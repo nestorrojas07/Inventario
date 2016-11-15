@@ -18,19 +18,17 @@
         </activity>
         <activity
             android:name=".Registro"
-            android:label="@string/title_activity_registro">
-
-        </activity>
+            android:label="@string/title_activity_registro"></activity>
         <activity
             android:name=".Inicio"
-            android:label="@string/title_activity_inicio">
-
-        </activity>
+            android:label="@string/title_activity_inicio"></activity>
         <activity
             android:name=".ingresarDatos"
-            android:label="@string/title_activity_ingresar_datos">
-
-        </activity>
+            android:label="@string/title_activity_ingresar_datos"></activity>
+        <activity
+            android:name=".ListarDatos"
+            android:label="@string/title_activity_listar_datos"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

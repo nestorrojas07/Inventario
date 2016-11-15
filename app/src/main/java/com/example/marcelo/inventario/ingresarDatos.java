@@ -1,6 +1,9 @@
 package com.example.marcelo.inventario;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,32 +13,48 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CursorAdapter;
 import android.widget.EditText;
+import android.widget.GridView;
+import android.widget.SimpleCursorAdapter;
+import android.widget.Toast;
 
+import static com.example.marcelo.inventario.ToDoDbHelper.*;
 public class ingresarDatos extends AppCompatActivity {
-
-    EditText miNombre;
-
-    Button btnSubmit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ingresar_datos);
 
-        miNombre = (EditText)findViewById(R.id.Nombre);
     }
 
-//    public void onClick(View v) {
-//        Intent intent = new Intent(this, Main2Activity.class);
-//        intent.putExtra("nombre", miNombre.getText().toString());
-//        startActivity(intent);
-//    }
+    public void guardarProducto(View view){
+        //recuperacion valores de controles
+        String Nombre = ((EditText)findViewById(R.id.Nombre)).getText().toString();
+        String Tipo = ((EditText)findViewById(R.id.Tipo)).getText().toString();
+        int Valor = Integer.parseInt(((EditText) findViewById(R.id.Valor)).getText().toString());
+        int Stock = Integer.parseInt(((EditText) findViewById(R.id.Stock)).getText().toString());
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.menu_ingresar_datos, menu);
-//        return true;
-//    }
+        //codigo SQLite
+        ToDoDbHelper toDoDbHelper = new ToDoDbHelper(this);
+        SQLiteDatabase db = toDoDbHelper.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put(TAREA_NOMBRE, Nombre);
+        cv.put(TAREA_TIPO, Tipo);
+        cv.put(TAREA_VALOR, Valor);
+        cv.put(TAREA_STOCK, Stock);
+
+
+        //nombre de la tabla, nullhack, valores
+        db.insert(TAREA_TABLE, null, cv);
+
+        //notifica la creacion con un TOAST
+        Toast.makeText(this, "Producto Guardado",Toast.LENGTH_LONG).show();
+
+        Intent intent = new Intent(this, Inicio.class);
+        startActivity(intent);
+    }
+
+
 }
