@@ -7,4 +7,12 @@
     <string name="title_activity_inicio">Inicio</string>
     <string name="title_activity_ingresar_datos">IngresarDatos</string>
     <string name="title_activity_listar_datos">ListarDatos</string>
+
+    <string name="textoIncio">BIENVENIDO</string>
+    <string name="nombre">Nombre</string>
+    <string name="tipo">Tipo</string>
+    <string name="valor">Valor</string>
+    <string name="stock">Stock</string>
+    <string name="insertar">Insertar</string>
+    <string name="volver">Volver</string>
 </resources>

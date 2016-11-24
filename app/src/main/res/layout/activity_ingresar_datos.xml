@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="BIENVENIDO"
+        android:text="@string/textoIncio"
         android:id="@+id/lblBienvenido"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -17,7 +17,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nombre"
+        android:text="@string/nombre"
         android:id="@+id/txtNombre"
         android:layout_below="@+id/lblBienvenido"/>
     <!--    android:layout_alignParentLeft="true"
@@ -37,7 +37,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tipo"
+        android:text="@string/tipo"
         android:id="@+id/txtTipo"
         android:layout_below="@+id/Nombre"/>
     <!--    android:layout_alignParentLeft="true"
@@ -56,7 +56,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor"
+        android:text="@string/valor"
         android:id="@+id/txtValor"
         android:layout_below="@+id/Tipo"/>
     <!--    android:layout_alignParentLeft="true"
@@ -76,7 +76,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stock"
+        android:text="@string/stock"
         android:id="@+id/txtStock"
         android:layout_below="@+id/Valor" />
     <!--    android:layout_alignParentLeft="true"
@@ -118,7 +118,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Insertar"
-        android:text="Insertar"
+        android:text="@string/insertar"
         android:layout_gravity="center_horizontal"
         android:layout_below="@+id/Stock"
         android:layout_toEndOf="@+id/txtValor"
@@ -127,7 +127,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Volver"
+        android:text="@string/volver"
         android:id="@+id/btnVolver"
         android:layout_alignBottom="@+id/Insertar"
         android:layout_toEndOf="@+id/Stock" />
