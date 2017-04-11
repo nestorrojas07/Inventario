@@ -45,8 +45,7 @@
         android:id="@+id/txtUsuario"
         android:layout_below="@+id/lblUsuario"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/lblLogin"
-        />
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -66,39 +65,36 @@
         android:id="@+id/txtContraseña"
         android:layout_below="@+id/lblcontracena"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/lblLogin"
-        />
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ingresar"
         android:id="@+id/btbIngresar"
-        android:layout_below="@+id/txtContraseña"
-        android:layout_alignParentStart="true"
         android:onClick="ingresar"
-        />
+        android:layout_below="@+id/txtContraseña"
+        android:layout_alignStart="@+id/btbRegistrarse"
+        android:layout_alignEnd="@+id/lblLogin" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Registrarse"
         android:id="@+id/btbRegistrarse"
-        android:layout_below="@+id/txtContraseña"
-        android:layout_toEndOf="@+id/txtContraseña"
         android:onClick="registro"
-        />
+        android:layout_below="@+id/btbIngresar"
+        android:layout_alignStart="@+id/imgLogin" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Salir"
         android:id="@+id/btbSalir"
-        android:layout_below="@+id/btbRegistrarse"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="30dp"
         android:onClick="salir"
-        />
+        android:layout_below="@+id/btbRegistrarse"
+        android:layout_alignStart="@+id/btbRegistrarse"
+        android:layout_alignEnd="@+id/btbRegistrarse" />
 
 
 

@@ -52,7 +52,7 @@ public class ToDoDbHelper extends SQLiteOpenHelper {
         Cursor registros = database.rawQuery(q,null);
         if(registros.moveToFirst()){
             do{
-                lista.add(registros.getString(1));
+                lista.add(registros.getString(1)+" ("+registros.getString(registros.getColumnIndex("stock")) +")");
             }while(registros.moveToNext());
         }
         return lista;

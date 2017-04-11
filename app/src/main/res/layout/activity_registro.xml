@@ -34,7 +34,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/lblNombre"
         android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/txtContraseñaRe" />
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -53,7 +53,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/lblUsuarioRe"
         android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/txtContraseñaRe" />
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -73,7 +73,8 @@
         android:id="@+id/txtContraseñaRe"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/lblcontracenaRe"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
